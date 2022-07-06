@@ -7,7 +7,7 @@
         <p>扫码成功</p>
       </div>
       <div class="middle">
-        <div class="node">
+        <div class="node" @click="toPage5">
           填写面访笔记
         </div>
         <p> 填写两个小问题，让面访更准确</p>
@@ -29,6 +29,11 @@ export default {
 name:'page2-container',
 components: {
   Top,List
+},
+methods: {
+  toPage5() {
+    this.$router.push('/page5')
+  }
 }
 }
 </script>
